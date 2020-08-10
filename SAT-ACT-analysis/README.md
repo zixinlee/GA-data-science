@@ -40,9 +40,9 @@ Based on the above criteria, I would recommend the College Board to target Ohio.
 
 In Ohio, students are mandated to take either the SAT or ACT, although the ACT is the overwhelmingly popular choice (100% participation for ACT 2018 vs 18% for SAT 2018). Ohio is the 7th largest state in the U.S., so there is a sizeable number of test-takers that the College Board can win over if the College Board can convince the Ohio Department of Education to encourage students to take the SAT.
 
-In Ohio, the ACT and SAT are already free for public school students to take. Thus, the main task left for College Board is to explain to the Department of Education why it would be more advantageous for students to take the SAT instead of the ACT.
-
 Furthermore, in 2017, Ohio had the 10th highest amount of state debt. If the College Board employs the same strategy of underbidding ACT, Inc. and make the cost of implementing the SAT lower compared to the ACT, they would significantly increase their chances of persuading the Ohio Department of Education to adopt the SAT statewide.
+
+The ACT and SAT are already free for public school students to take. Thus, the main task left for College Board is to explain to the Department of Education why it would be more advantageous for students to take the SAT instead of the ACT.
 
 ## Data Dictionary
 
