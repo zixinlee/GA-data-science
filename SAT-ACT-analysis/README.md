@@ -31,7 +31,7 @@ SAT and ACT participation rates have an inverse relationship, as seen from the g
 ## Final recommendation: Target Ohio
 
 
-- **Large population:** Ohio is the 7th largest state in the U.S., so there is a sizeable number of new test-takers that the College Board can acquire.
+- **Large population:** Ohio is the 7th most populous state in the U.S., so there is a sizeable number of new test-takers that the College Board can acquire.
 
 
 - **Relatively low current SAT participation rates:** From 2017 to 2018, Ohio increased both its ACT and SAT participation after it became compulsory to take either test. However, the increase was larger for the ACT, i.e. from 75% to 100%, whereas for SAT it was from 12% to 18%. Thus, there is still considerable room for growth for the SAT.
