@@ -28,7 +28,7 @@ SAT and ACT participation rates have an inverse relationship, as seen from the g
 - **Free testing significantly boosts participation rate.** <BR>As seen, state-funding dramatically boosted SAT participation in Illinois and Colorado as students were more likely to take the free SAT than the paid ACT. The College Board would do well to target states that are already funding the ACT or other college admission tests and convince them to adopt (and fund) the SAT instead. This would allow the SAT to be taken by a wider group of students, e.g. students from lower-income families who would not have taken the SAT if it were not free and state-required.
 
 
-### Final recommendation: Target Ohio
+## Final recommendation: Target Ohio
 
 
 - **Large population:** Ohio is the 7th largest state in the U.S., so there is a sizeable number of new test-takers that the College Board can acquire.
