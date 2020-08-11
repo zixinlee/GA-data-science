@@ -15,30 +15,33 @@ In this project, we examine the ACT and SAT scores and participation rates by st
 
 ## Key Takeaways
 
-- There were more SAT than ACT test-takers in 2018, but ACT still enjoys greater popularity in more states. This is possible because 1/3 of all U.S. states have a 100% ACT participation rate. These states may have a smaller population, resulting in a lower absolute number of ACT test-takers. Still, what's important to note here is that the ACT is dominant in more states than the SAT.
+- **Inverse relationship between SAT vs. ACT participation rates**<BR>
+SAT and ACT participation rates have an inverse relationship, as seen from the general downward sloping trend below. This is expected as the two tests are usually substitutes of one another, thus a higher participation in one test would see a lower participation in the other.
 
 
-- State regulations have a big influence on test participation rates. In the past few years, the College Board had aggressively underbid the ACT to win state contracts and they were successful in capturing market share from ACT in Colorado and Illinois, which were previously longstanding ACT-taking states. SAT participation rates shot up in both states after the SAT became a requirement. As part of high school accountability, the SAT was state-funded for students to take for free.
+- **There were more SAT than ACT test-takers in 2018, but ACT still enjoys greater popularity in more states.** <BR>This is possible because 1/3 of all U.S. states have a 100% ACT participation rate. These states may have a smaller population, resulting in a lower absolute number of ACT test-takers. Still, what's important to note here is that the ACT is dominant in more states than the SAT.
 
 
-- Free testing significantly boosts participation rate. As seen, state-funding dramatically boosted SAT participation in Illinois and Colorado as students were more likely to take the free SAT than the paid ACT. The College Board would do well to target states that are already funding the ACT or other college admission tests and convince them to adopt (and fund) the SAT instead. This would allow the SAT to be taken by a wider group of students, e.g. students from lower-income families who would not have taken the SAT if it were not free and state-required.
+- **State regulations have a big influence on test participation rates.** <BR>In the past few years, the College Board had aggressively underbid the ACT to win state contracts and they were successful in capturing market share from ACT in Colorado and Illinois, which were previously longstanding ACT-taking states. SAT participation rates shot up in both states after the SAT became a requirement. As part of high school accountability, the SAT was state-funded for students to take for free.
 
 
-## Final Recommendation
+- **Free testing significantly boosts participation rate.** <BR>As seen, state-funding dramatically boosted SAT participation in Illinois and Colorado as students were more likely to take the free SAT than the paid ACT. The College Board would do well to target states that are already funding the ACT or other college admission tests and convince them to adopt (and fund) the SAT instead. This would allow the SAT to be taken by a wider group of students, e.g. students from lower-income families who would not have taken the SAT if it were not free and state-required.
 
-I would recommend targeting states with the following criteria:
-- **Low current SAT participation rates** (to maximise increase in participation rate)
-- **High ACT participation rates**
-- **Large population** (to maximise number of new test-takers)
-- **High state debts** (the College Board can underbid ACT like it did in Illinois and Colorado, and states with debts would be more incentivised to switch over to the SAT as that would allow them to save on cost)
 
-Based on the above criteria, I would recommend the College Board to target Ohio.
+### Final recommendation: Target Ohio
 
-In Ohio, students are mandated to take either the SAT or ACT, although the ACT is the overwhelmingly popular choice (100% participation for ACT 2018 vs 18% for SAT 2018). Ohio is the 7th largest state in the U.S., so there is a sizeable number of test-takers that the College Board can win over if the College Board can convince the Ohio Department of Education to encourage students to take the SAT.
 
-Furthermore, in 2017, Ohio had the 10th highest amount of state debt. If the College Board employs the same strategy of underbidding ACT, Inc. and make the cost of implementing the SAT lower compared to the ACT, they would significantly increase their chances of persuading the Ohio Department of Education to adopt the SAT statewide.
+- **Large population:** Ohio is the 7th largest state in the U.S., so there is a sizeable number of new test-takers that the College Board can acquire.
 
-The ACT and SAT are already free for public school students in Ohio to take. Thus, the main task left for College Board is to explain to the Department of Education why it would be more beneficial for students to take the SAT instead of the ACT.
+
+- **Relatively low current SAT participation rates:** From 2017 to 2018, Ohio increased both its ACT and SAT participation after it became compulsory to take either test. However, the increase was larger for the ACT, i.e. from 75% to 100%, whereas for SAT it was from 12% to 18%. Thus, there is still considerable room for growth for the SAT.
+
+
+- **High state debts:** In 2017, Ohio had the 10th highest amount of state debt. If the College Board employs the same strategy of underbidding ACT, Inc. and make the cost of implementing the SAT lower compared to the ACT, they would increase their chances of persuading the Ohio Department of Education to adopt the SAT statewide.
+
+
+- **Free to take the ACT or SAT:** The ACT and SAT are already free for public school students to take. Thus, the main task left for College Board is to explain to the Department of Education why it would be more beneficial for students to take the SAT instead of the ACT.
+
 
 ## Data Dictionary
 
