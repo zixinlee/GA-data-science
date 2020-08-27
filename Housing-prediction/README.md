@@ -90,7 +90,7 @@ For my initial modelling step, I compared the performance of the 3 regularised l
 
 Elastic Net performed the best in the initial modelling step, and to keep my process streamlined, I continued using the Elastic Net model to evaluate performance during feature selection.
 
-## Conclusion
+### Conclusion
 
 These are the final 23 predictors used in our model.
 
@@ -128,7 +128,7 @@ The coefficients from our Elastic Net regression tell us the relative importance
 7. Houses with concrete (`PConc`) foundation are expected to have higher prices according to the model. This is not a conclusion we can make too quickly, as most houses in our dataset have a concrete foundation. This is a similar problem as described in point 5.
 
 
-## Limitations
+### Limitations
 
 - **Hyperparameter tuning**: A predefined range of values was passed in to tune the hyperparameters for our regularisation models. There is a possibility that there are values outside of the predefined range that could have produced better results.
 
