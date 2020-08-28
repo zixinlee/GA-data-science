@@ -2,11 +2,11 @@
 
 ## Introduction
 
-In this project, my goal is to develop a regression model that will make accurate predictions of the sale prices of houses in the city of Ames in Iowa, USA.
+In this project, my goal is to develop a regression model that will make accurate predictions of house prices in the city of Ames in Iowa, USA.
 
 The benefits of obtaining accurate house price predictions are manifold. For instance, homeowners can have a better gauge of a fair selling price they should list for their house. This way, they will not underprice their house and lose out on potential profit. Similarly, homebuyers can know what is a fair price to be paying for a particular house and will not unknowingly purchase overvalued properties.
 
-Through a regression model, we will also be able to identify some features that increase or decrease the value of a house. With this knowledge, property developers could better understand which features to include or exclude in future developments. They would already have domain expertise in this area, and a regression model could help to reinforce what they already know and perhaps reveal things that are less apparent.
+Through a regression model, we will also be able to identify some features that increase or decrease the value of a house. With this knowledge, property developers can better understand which features to include or exclude in future developments. They would already have domain expertise in this area, and a regression model could help to reinforce what they already know and perhaps reveal things that are less apparent.
 
 The project involves analysing the **Ames Housing Dataset**, which is composed of over 2,900 records of properties transacted in Ames between 2006-2010. The 2,900 records are split between two separate _train_ (2,051 records) and _test_ (879 records) datasets.
 
@@ -61,22 +61,20 @@ These are the two new variables created from the existing variables:
 
 There were also several columns pertaining the the square footage of certain areas of the house, such as the pool or the wood deck. There were many null values in these columns so I converted them into binary columns to indicate the presence or absence of certain features instead.
 
-These are the new variables created:
+These are the new binary variables created:
 1. `HasPorch`: Grouped together `OpenPorchSF`, `EnclosedPorch`, `3SsnPorch`, `ScreenPorch`
 
 2. `HasWoodDeck`: Converted from `WoodDeckSF`
 
 3. `HasPool` was created as well but it was dropped immediately as it had more than 90% of values in a single value
 
-At the end of the process, I had 42 columns prior to one-hot encoding, and after one-hot encoding, the total number of feature columns was 169.
+At the end of the process, I had 39 columns prior to one-hot encoding, and after one-hot encoding, the total number of feature columns was 169.
 
 ## Part 2: Modeling, feature selection, and prediction
 
-After completing the data preparation, I started running the models to predict housing prices on the holdout data in the train dataset.
+After completing the data preparation phase, I started running the regression models to predict housing prices on holdout data from the train dataset.
 
-Now that we have completed the data preparation, we can start fitting different regression models and select the best model as well as features to predict our target variable.
-
-Prior to modelling, we will do a scaling of our feature variables so that they have a mean of 0 and standard deviation of 1. This helps to avoid the case where one or several features dominate others in magnitude, and as a result, the model hardly picks up the contribution of the smaller scale variables, even if they are strong.
+Before training my models, I did a scaling of our feature variables so that they have a mean of 0 and standard deviation of 1. This helps to avoid the case where one or several features dominate others in magnitude, and as a result, the model hardly picks up the contribution of the smaller scale variables, even if they are strong.
 
 ### Modeling
 Four different models were tested using cross validation on training data:
@@ -92,13 +90,6 @@ Elastic Net performed the best in the initial modelling step, and to keep my pro
 
 ### Conclusion
 
-These are the final 23 predictors used in our model.
-
-<<<<<<< HEAD
-![](images/final_23_pred.png)
-=======
->>>>>>> 6d07fe9... first commit
-
 The Elastic Net model was able to perform consistently well (the mean CV R2 score remained around 0.89) even after cutting the number of features down.
 
 The final model used to make predictions for the actual test dataset produced a CV mean R2 of 0.90169, which means the model was able to explain 90.2% of the variations in `SalePrice`. The Kaggle score (RMSE) was 23,267.
@@ -107,6 +98,9 @@ A disadvantage of using an Elastic Net model is that it would require more compu
 
 
 **Interpretation of final selected features**
+These are the final 23 predictors used in our model.
+
+![](images/final_23_pred.png)
 
 The coefficients from our Elastic Net regression tell us the relative importance of each feature on `SalePrice`, but they are not directly interpretable and do not tell us the effect of one unit change in the feature variable on `SalePrice`. Homeowners can focus on these features when trying to improve the value of their homes.
 
