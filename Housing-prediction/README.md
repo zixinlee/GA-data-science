@@ -95,7 +95,7 @@ A disadvantage of using an Elastic Net model is that it would require more compu
 
 These are the final 23 predictors used in our model.
 
-![](images/final_23_pred.png)
+![](images/final_23_predictors.png)
 
 The coefficients from our Elastic Net regression tell us the relative importance of each feature on `SalePrice`, but they are not directly interpretable and do not tell us the effect of one unit change in the feature variable on `SalePrice`. That said, homeowners can still focus on these features when trying to improve the value of their homes.
 
