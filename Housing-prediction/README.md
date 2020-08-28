@@ -29,7 +29,7 @@ These were the steps taken to clean the data:
 
 - Drop columns with >80% missing values (four columns were dropped)
 - Observations with missing values were not dropped; instead I imputed values for them in a sensible manner
-- Remove features with low variance in their values as they would not help much in explaining the variations in `SalePrice`
+- Remove features with low variance in their values as they would not help much in explaining the variations in `SalePrice` (around 90% or more of values in a single value)
 - Check the correlation between numerical variables and remove the highly correlated features
 - Remove features without meaningful information, e.g. `MiscVal` (unclear what information it contains) and `LowQualFinSF` (contains many 0 values and shows no relationship with `SalePrice`)
 
