@@ -92,6 +92,7 @@ A disadvantage of using an Elastic Net model is that it would require more compu
 
 
 **Interpretation of final selected features**
+
 These are the final 23 predictors used in our model.
 
 ![](images/final_23_pred.png)
