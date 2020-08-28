@@ -145,5 +145,3 @@ The coefficients from our Elastic Net regression tell us the relative importance
 
 
 - **Limited generalisability to houses outside of Ames, Iowa**: The predictive model we've built only applies to the houses in Ames and will not be accurate when applied to houses in other cities or countries. To make it more applicable across the board, we could perhaps remove features specific to houses in the U.S. or Ames, such as replacing Ames' neighborhood with a metric describing a property's distance from the city centre, or whether a property is near a buzzing commercial hub, etc.
-
-------
