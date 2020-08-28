@@ -46,17 +46,11 @@ These were the steps taken to clean the data:
 To reduce the number of features, I linearly combined some of the related features and dropped the constituent columns.
 
 These are the two new variables created from the existing variables:
-  1. `TotalSF`
+  1. `TotalSF`: Total square footage of the house, including the basement. `TotalSF` replaced `GrLivArea`, `1stFlrSF`, `2ndFlrSF`, `TotalBsmtSF`, `BsmtFinSF1`, `BsmtFinSF2` and `BsmtUnfSF`
 
-  Total square footage of the house, including the basement. `TotalSF` replaced `GrLivArea`, `1stFlrSF`, `2ndFlrSF`, `TotalBsmtSF`, `BsmtFinSF1`, `BsmtFinSF2` and `BsmtUnfSF`
+  2. `TotalBath`: Total number of full and half bathrooms in the house. Replaced `HalfBath`, `BsmtHalfBath`, `FullBath`, `BsmtFullBath`
 
-  2. `TotalBath`
-
-  Total number of full and half bathrooms in the house
-
-  3. `HouseAge`
-
-  Replaced `YearBuilt` and `YrSold` with `HouseAge` by deducting the year that the house was constructed (`YearBuilt`) from the year it was sold (`YrSold`). `MoSold` was also subsequently dropped.
+  3. `HouseAge`: Replaced `YearBuilt` and `YrSold` with `HouseAge` by deducting the year that the house was constructed (`YearBuilt`) from the year it was sold (`YrSold`). `MoSold` was also subsequently dropped.
 
 
 There were also several columns pertaining the the square footage of certain areas of the house, such as the pool or the wood deck. There were many null values in these columns so I converted them into binary columns to indicate the presence or absence of certain features instead.
