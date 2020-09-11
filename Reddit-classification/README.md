@@ -15,7 +15,7 @@ I am interested to see whether these two subreddits are distinct enough to be di
 Using Reddit's API, I collected close to 1,000 posts from each subreddit. The posts were cleaned and preprocessed as outlined in the steps below to transform the text into a usable format for our classifier models.
 
 * Remove posts by moderators
-* Combine post title column and post content column into a single full-text column
+* Combine the post title and post content columns into a single column
 * Create target variable column `is_askwomenover30`
 * Make text all lowercase
 * Remove punctuation
@@ -66,9 +66,9 @@ Looking at the documents that were misclassified, it seems that many of them wer
 
 ## Conclusion
 
-Using a TfidfVectorizer + Logistic Regression classifier trained on title and post content allowed us to classify unlabelled posts into the correct subreddit with an 80% accuracy rate. This shows that there is a distinguishable difference in most of the posts from the two subreddits, although it is hard to infer from our top predictor words that they are differentiated by age-group.
+Using a TfidfVectorizer + Logistic Regression classifier trained on title and post content allowed us to classify unlabelled posts into the correct subreddit with an 80% accuracy rate. This shows that there is a distinguishable difference in most of the posts from the two subreddits, although it is hard to infer from our top predictor words that they are differentiated by age group.
 
-It is hard to make the generalisation that there is a clear separation in the topics discussed by women above 30, given that different people move through life at different paces and not everyone within the same age group will share the same life stage and life events. Hence, what is relevant to r/AskWomenOver30 could also be very relevant to r/AskWomen.
+It is difficult to make the generalisation that there is a clear separation in the topics discussed by women above 30, given that different people move through life at different paces and not everyone within the same age group will share the same life stage and life events. Hence, what is relevant to r/AskWomenOver30 could also be very relevant to r/AskWomen.
 
 
 ### Limitations and future developments
