@@ -1,35 +1,39 @@
-# Project 3: Classifying subreddits
+# Project 3: Classifying subreddit posts
 
-For the uninitiated, Reddit is an American mega-forum where people can share any kind of news and content and have discussion with other Redditors. Reddit has more than 300 million users and is divided into more than 100,000 sub-forums known as subreddits. As of September 2020, Reddit ranks #17 in global internet traffic and engagement. [(Source)](https://www.alexa.com/siteinfo/reddit.com)
+**View notebooks:**
+- [Part 1: Data collection and data cleaning](https://nbviewer.jupyter.org/github/zixinlee/GA-data-science/blob/master/Reddit-classification/1-Reddit-data-collection.ipynb)
 
-## Problem statement
+- [Part 2: EDA and modelling](https://nbviewer.jupyter.org/github/zixinlee/GA-data-science/blob/master/Reddit-classification/2-EDA-modelling.ipynb)
 
-In this project, I attempt to classify posts from two subreddits – `r/AskWomen` and `r/AskWomenOver30`. This is part of a wider project that my team is working on to automate the sorting of Reddit posts.
+### Problem statement
 
-`r/AskWomen` and `r/AskWomenOver30` are both subreddits where women can comfortably and candidly share their responses in a non-judgmental space, but the latter is catered towards females above 30 years old.
+In this project, I attempt to classify posts from two subreddits – `r/AskWomen` and `r/AskWomenOver30`.
+Both subreddits provide women a space where they can comfortably and candidly share their responses in a non-judgmental space, but the latter is catered towards females above 30 years old.
 
-I am interested to see whether these two subreddits are distinct enough to be distinguished by a classifier, and explore whether the classifier can extract meaningful differences in the topics discussed in the two subreddits.
+These two subreddits were chosen as I am interested in the study of human nature and wanted to examine whether and how topics of discussion amongst women differ between age groups.
+Due to the overlapping nature of these subreddits, I am also keen to find out whether a machine learning model will be able to distinguish between posts from the two subreddits and extract meaningful differences in the topics discussed in them.
 
-## Problem Approach & Summary of findings
-(A more detailed coverage of the project is done from the next section onwards.)
+### Summary of approach and findings
+_(A more detailed explanation of the project process is covered from the next section onwards.)_
 
-To begin, Reddit's API was used to collect close to 1,000 posts from each subreddit. Next comes the data preparation step, which involves cleaning our raw, "unclean" data and transforming it into a numerical representation that can be understood by machine learning models.
+To begin, I used Reddit's API to scrape posts from each subreddit. The data preparation step comes next, which involves cleaning up our raw, "unclean" data and transforming it into a numerical representation that can be understood by our machine learning models.
 
-In my modelling process, I tested 3 classification models – Logistic Regression, Multinomial Naive Bayes, and Support Vector Machine – and evaluated them primarily on their Accuracy score. The Logistic Regression model performed the best with an accuracy score of 0.8, which suggests that it is able to correctly classify a post into the correct sub-Reddit 80% of the time.
+In my modelling process, I tested 3 classification models – Logistic Regression, Multinomial Naive Bayes, and Support Vector Machine – and evaluated them primarily on their Accuracy score and AUC score. The Logistic Regression model performed the best with an accuracy score of 0.8 and AUC score of 0.86, which suggests that it is able to correctly classify a post into the correct subreddit 80% of the time.
+
+The below table summarises the performance of each model:
+
+<img src="images/scores_df_styled.png" width="550" />
 
 
+And these word clouds show the top predictive words for the respective subreddits.
 
 <img src="images/askwomenover30_most_predictive.png" width="450"/> <img src="images/askwomen_most_predictive.png" width="450" />
 
+## Detailed overview of project
 
+### Data preparation
 
-## Data collection
-
-Basic cleaning and preprocessing of the posts were done, which include steps like removing punctuation and non-alphabetical text, converting all text to lowercase, removing stopwords, and lemmatizing the words (which means to retrieve the dictionary form of a word).
-
-The last step in our data preparation is vectorization. the text was encoded into numerical values via sklearn's CountVectorizer and TfidfVectorizer. Vectorization refers to the process of transforming text into a numerical representation because machine learning models are not able to take text as inputs.
-
-Using Reddit's API, I collected close to 1,000 posts from each subreddit. The posts were cleaned and preprocessed as outlined in the steps below to transform the text into a usable format for our classifier models.
+Using Reddit's API, I collected close to 1,000 posts from each subreddit, which is the cap that Reddit has imposed on the number of posts that can be scraped at any one time. The posts were first cleaned and preprocessed as outlined below.
 
 * Remove posts by moderators
 * Combine the post title and post content columns into a single column
@@ -38,19 +42,24 @@ Using Reddit's API, I collected close to 1,000 posts from each subreddit. The po
 * Remove punctuation
 * Remove all non-alphabetical text
 * Remove stopwords
-* Lemmatize words
+* Lemmatize words (which means to retrieve the dictionary form of a word)
+
+The last step in our data preparation is to encode our text as numbers via Tokenization + Vectorization, because machine learning models are only able to take in numerical features as input. Specifically, when working with text documents, we transform them so that each document is represented as a numerical vector.
+
+Sklearn has two built-in vectorizers, the CountVectorizer and TfidfVectizer, which takes in a collection of text documents and performs tokenization and vectorization together. I tested both vectorizers for each classification model for a more comprehensive comparison.
 
 ## Modelling
 
-The following 3 models were tested together with both the CountVectorizer and TfidfVectorizer for feature extraction:
+These are the 3 classification models that were evaluated:
 
- 1. Logistic regression
+ 1. Logistic Regression
  2. Multinomial Naive Bayes
- 3. Support vector classifier
+ 3. Support Vector Classifier
 
-Due to several hyperparameters that require tuning, all 3 classifiers were optimised using GridSearchCV to find the best hyperparameter combination.
+As there are a few hyperparameters that require tuning, all 3 classifiers were optimised using GridSearchCV to find the best hyperparameter combination.
 
 The below table summarises the performance of each model:
+
 <img src="images/scores_df_styled.png" width="550" />
 
 
@@ -71,8 +80,7 @@ Given that logistic regression had the best accuracy and AUC scores, it was sele
 
 These word clouds show the top predictive words for the respective subreddits.
 
-![](images/askwomenover30_most_predictive.png)
-![](images/askwomen_most_predictive.png)
+<img src="images/askwomenover30_most_predictive.png" width="450"/> <img src="images/askwomen_most_predictive.png" width="450" />
 
 ### Misclassified posts
 
@@ -117,5 +125,5 @@ In spite of the limitations, the model performed very decently in separating the
 
 ### Code and resources used
 
-Python version: 3.7
-Packages: pandas, numpy, matplotlib, seaborn, sklearn, NLTK
+- Python version: 3.7
+- Packages: pandas, numpy, matplotlib, seaborn, sklearn, NLTK
