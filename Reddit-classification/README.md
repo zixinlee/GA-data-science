@@ -17,7 +17,9 @@ To begin, Reddit's API was used to collect close to 1,000 posts from each subred
 
 In my modelling process, I tested 3 classification models – Logistic Regression, Multinomial Naive Bayes, and Support Vector Machine – and evaluated them primarily on their Accuracy score. The Logistic Regression model performed the best with an accuracy score of 0.8, which suggests that it is able to correctly classify a post into the correct sub-Reddit 80% of the time.
 
-<img src="images/askwomenover30_most_predictive.png" width="400" height="300" /> <img src="images/askwomen_most_predictive.png" width="400" height="300" />
+
+
+<img src="images/askwomenover30_most_predictive.png" width="450"/> <img src="images/askwomen_most_predictive.png" width="450" />
 
 
 
@@ -49,8 +51,8 @@ The following 3 models were tested together with both the CountVectorizer and Tf
 Due to several hyperparameters that require tuning, all 3 classifiers were optimised using GridSearchCV to find the best hyperparameter combination.
 
 The below table summarises the performance of each model:
+<img src="images/scores_df_styled.png" width="550" />
 
-![scores_df_styled](images/scores_df_styled.png)
 
 Generally speaking, the Logistic Regression models performed the best, followed by Support Vector Classifiers, then Multinomial Naive Bayes.
 
