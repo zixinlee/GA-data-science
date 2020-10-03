@@ -1,8 +1,7 @@
 # Project 3: Classifying subreddit posts
 
-**View notebooks:**
+View notebooks on NBviewer:
 - [Part 1: Data collection and data cleaning](https://nbviewer.jupyter.org/github/zixinlee/GA-data-science/blob/master/Reddit-classification/1-Reddit-data-collection.ipynb)
-
 - [Part 2: EDA and modelling](https://nbviewer.jupyter.org/github/zixinlee/GA-data-science/blob/master/Reddit-classification/2-EDA-modelling.ipynb)
 
 ### Problem statement
