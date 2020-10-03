@@ -29,6 +29,8 @@ And these word clouds show the top predictive words for the respective subreddit
 
 <img src="images/askwomenover30_most_predictive.png" width="450"/> <img src="images/askwomen_most_predictive.png" width="450" />
 
+---
+
 ## Detailed overview of project
 
 ### Data preparation
