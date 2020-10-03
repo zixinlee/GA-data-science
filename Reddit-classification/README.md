@@ -10,7 +10,22 @@ In this project, I attempt to classify posts from two subreddits – `r/AskWomen
 
 I am interested to see whether these two subreddits are distinct enough to be distinguished by a classifier, and explore whether the classifier can extract meaningful differences in the topics discussed in the two subreddits.
 
+## Problem Approach & Summary of findings
+(A more detailed coverage of the project is done from the next section onwards.)
+
+To begin, Reddit's API was used to collect close to 1,000 posts from each subreddit. Next comes the data preparation step, which involves cleaning our raw, "unclean" data and transforming it into a numerical representation that can be understood by machine learning models.
+
+In my modelling process, I tested 3 classification models – Logistic Regression, Multinomial Naive Bayes, and Support Vector Machine – and evaluated them primarily on their Accuracy score. The Logistic Regression model performed the best with an accuracy score of 0.8, which suggests that it is able to correctly classify a post into the correct sub-Reddit 80% of the time.
+
+<img src="images/askwomenover30_most_predictive.png" width="400" height="300" /> <img src="images/askwomen_most_predictive.png" width="400" height="300" />
+
+
+
 ## Data collection
+
+Basic cleaning and preprocessing of the posts were done, which include steps like removing punctuation and non-alphabetical text, converting all text to lowercase, removing stopwords, and lemmatizing the words (which means to retrieve the dictionary form of a word).
+
+The last step in our data preparation is vectorization. the text was encoded into numerical values via sklearn's CountVectorizer and TfidfVectorizer. Vectorization refers to the process of transforming text into a numerical representation because machine learning models are not able to take text as inputs.
 
 Using Reddit's API, I collected close to 1,000 posts from each subreddit. The posts were cleaned and preprocessed as outlined in the steps below to transform the text into a usable format for our classifier models.
 
