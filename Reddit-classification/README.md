@@ -20,15 +20,6 @@ To begin, I used Reddit's API to scrape posts from each subreddit. The data prep
 
 In my modelling process, I tested 3 classification models – Logistic Regression, Multinomial Naive Bayes, and Support Vector Machine – and evaluated them primarily on their Accuracy score and AUC score. The Logistic Regression model performed the best with an accuracy score of 0.8 and AUC score of 0.86, which suggests that it is able to correctly classify a post into the correct subreddit 80% of the time.
 
-The below table summarises the performance of each model:
-
-<img src="images/scores_df_styled.png" width="550" />
-
-
-And these word clouds show the top predictive words for the respective subreddits.
-
-<img src="images/askwomenover30_most_predictive.png" width="450"/> <img src="images/askwomen_most_predictive.png" width="450" />
-
 ---
 
 ## Detailed overview of project
