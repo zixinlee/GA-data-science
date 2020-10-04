@@ -34,7 +34,7 @@ Predicting the presence of WNV is a binary classification problem. To that end, 
 
 In this analysis, we explored the performance of several models in predicting the presence of WNV in mosquitos. Using AUC score and sensitivity as our main evaluation metrics, the Random Forest classifier, which obtained an AUC score of 0.846 and sensitivity of 0.819, was selected as the final production model.
 
-# ![](datasets/top20feat.jpg)
+# ![](data/top20feat.jpg)
 
 As seen from the model's top 20 features, factors related to seasonality, weather, location and mosquito species are highly important in predicting the presence of WNV. In particular, seasonality and weather-related features play the biggest role as they made up the majority of the top 20 features. This aligns with the fact the WNV is a seasonal virus that emerges during summer as hot temperatures favour mosquito-breeding.
 
