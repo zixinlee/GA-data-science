@@ -1,5 +1,9 @@
 # How to increase SAT participation rate?
 
+View notebook on NBviewer:
+
+- [SAT and ACT participation EDA and analysis](https://nbviewer.jupyter.org/github/zixinlee/GA-data-science/blob/master/SAT-ACT-analysis/code/SAT_ACT_17_18_analysis.ipynb)
+
 ## Introduction
 
 In the U.S., the SAT and ACT are the two most well-known standardised tests used for admission into colleges or universities. The SAT was introduced to the U.S. in 1926 whereas the ACT was introduced in 1959 as a competitor to the SAT.

@@ -1,4 +1,8 @@
 # Project 4: Predicting presence of West Nile virus in mosquitos
+Zi Xin | Rachel | David | Xavier
+
+View notebook on NBviewer:
+- [WNV prediction - EDA and modelling](https://nbviewer.jupyter.org/github/zixinlee/GA-data-science/blob/master/West-nile-virus/WNV_EDA_modelling.ipynb)
 
 ### Introduction
 
@@ -10,14 +14,14 @@ In 2002, WNV first hit Chicago with 225 human cases reported that summer. In res
 bust urban mosquito control programs in the country. [[4]](https://www.chicago.gov/content/dam/city/depts/cdph/food_env/general/West_Nile_Virus/WNV_2018databrief_FINALJan102019.pdf)
 
 
-### Problem Statement
+### Problem statement
 
-The goal of this project is to assist the City of Chicago a.k.a Windy City and the CDPH in developing a model that can accurately predict when and where different species of mosquitos will test positive for WNV and identify the factors that are the strongest predictors of WNV presence.
+The goal of this project is to assist the City of Chicago and the CDPH in developing a model that can accurately predict when and where different species of mosquitos will test positive for WNV and identify the factors that are the strongest predictors of WNV presence.
 
 If outbreaks of WNV in mosquitos can be reliably predicted, the City of Chicago and CPHD will be able to more efficiently and effectively coordinate resources towards preventing transmission of this potentially deadly virus.
 
 
-### Problem Approach
+### Problem approach
 
 Predicting the presence of WNV is a binary classification problem. To that end, we tested several classification models listed below using a total of 66 feature variables. The evaluation metrics used will be AUC score and sensitivity (recall).
 
@@ -30,9 +34,9 @@ Predicting the presence of WNV is a binary classification problem. To that end, 
 - Gradient boosting
 - XGBoost
 
-## Conclusion and Recommendations
+## Conclusion and recommendations
 
-In this analysis, we explored the performance of several models in predicting the presence of WNV in mosquitos. Using AUC score and sensitivity as our main evaluation metrics, the Random Forest classifier, which obtained an AUC score of 0.846 and sensitivity of 0.819, was selected as the final production model.
+Using AUC score and sensitivity as our main evaluation metrics, the Random Forest classifier, which obtained an AUC score of 0.846 and sensitivity of 0.819, was selected as the final production model.
 
 # ![](data/top20feat.jpg)
 
@@ -46,11 +50,10 @@ For spraying, since WNV incidence is the highest in August, spraying efforts sho
 
 ## Data description
 
-**Train/Test Data** (split into separate train and validation sets for modelling) – Every week from late spring through the fall, mosquitos in traps across the city are tested for presence of WNV. These test results are summarised by date from May 2007 to Oct 2014, trap, and species. Location data is also provided for all the traps.
+**Train/Test Data** – Every week from late spring through the fall, mosquitos in traps across the city are tested for presence of WNV. These test results are summarised by date from May 2007 to Oct 2014, trap, and species. Location data is also provided for all the traps.
 
-Train Data consist of information for 2007, 2009, 2011 and 2013, while Test Data consist of information for 2008, 2010, 2012 and 2014.
-
+Train Data consist of information for odd-numbered years (2007, 2009, 2011 and 2013), while Test Data consist of information for even-numbered years (2008, 2010, 2012 and 2014).
 
 **Spray Data** – Data is provided for the locations where the City of Chicago did mosquito spraying in 2011 and 2013. Spraying can reduce the number of mosquitos in the area, and therefore might eliminate the appearance of WNV.
 
-**Weather data** – Daily weather records are provided for the period 2007 to 2014 from 2 weather stations. Hot and dry weather conditions are conducive for a seasonal virus like WNV, and it is worth using weather data to improve the prediction of WNV presence.
+**Weather Data** – Daily weather records are provided for the period 2007 to 2014 from 2 weather stations. Hot and dry weather conditions are conducive for a seasonal virus like WNV, and it is worth using weather data to improve the prediction of WNV presence.
