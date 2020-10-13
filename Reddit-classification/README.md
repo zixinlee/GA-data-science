@@ -16,7 +16,10 @@ Due to the overlapping nature of these subreddits, I am also keen to find out wh
 ### Summary of approach and findings
 _(A more detailed explanation of the project process is covered from the next section onwards.)_
 
-To begin, I used Reddit's API to scrape posts from each subreddit. The data preparation step comes next, which involves cleaning up our raw, "unclean" data and transforming it into a numerical representation that can be understood by our machine learning models.
+To begin, I used Reddit's API to scrape posts from each subreddit. Next, I cleaned and transformed the raw text data into a numerical representation that can be understood by our machine learning models. Briefly, this involves:
+
+- Cleaning text data – remove HTML, punctuation, and non-alphabetical text using regular expressions, and removing stopwords
+- Preprocessing text data – lemmatization, tokenization and vectorization.
 
 In my modelling process, I tested 3 classification models – Logistic Regression, Multinomial Naive Bayes, and Support Vector Machine – and evaluated them primarily on their Accuracy score and AUC score. The Logistic Regression model performed the best with an accuracy score of 0.8 and AUC score of 0.86, which suggests that it is able to correctly classify a post into the correct subreddit 80% of the time.
 
@@ -39,9 +42,13 @@ Using Reddit's API, I collected close to 1,000 posts from each subreddit, which 
 
 The last step in our data preparation is to encode our text as numbers via Tokenization + Vectorization, because machine learning models are only able to take in numerical features as input. Specifically, when working with text documents, we transform them so that each document is represented as a numerical vector.
 
-Sklearn has two built-in vectorizers, the CountVectorizer and TfidfVectizer, which takes in a collection of text documents and performs tokenization and vectorization together. I tested both vectorizers for each classification model for a more comprehensive comparison.
+Sklearn has two built-in vectorizers, the CountVectorizer and TfidfVectizer, which takes in a collection of text documents and performs tokenization and vectorization together.
 
-## Modelling
+The difference between the two is that Count Vectorizer will simply count the frequency of every word and give every word an equal weightage. On the other hand, the TFIDF Vectorizer gives different weights to words. The fewer documents in which a term occurs, the more significant it likely is to be to the documents it does occur in.
+
+I tested both vectorizers for each classification model for a more comprehensive comparison.
+
+### Modelling
 
 These are the 3 classification models that were evaluated:
 
@@ -67,22 +74,22 @@ In my case, since the classes in my dataset are balanced, the metrics that I  pr
 Given that logistic regression had the best accuracy and AUC scores, it was selected as our final model. For the vectorizers, using the TFIDF Vectorizer gives us a higher AUC score than the Count Vectorizer. Thus, the final model will be **TfidfVectorizer + Logistic Regression**.
 
 
-## Results from the best model
+### Results from the best model
 
-### Top predictors
+#### Top predictors
 
 These word clouds show the top predictive words for the respective subreddits.
 
 <img src="images/askwomenover30_most_predictive.png" width="450"/> <img src="images/askwomen_most_predictive.png" width="450" />
 
-### Misclassified posts
+#### Misclassified posts
 
 20% of the posts in our validation set (119 out of 591) were misclassified.
 
 Looking at the documents that were misclassified, it seems that many of them were very short in length (less than 10 words) and and had generic content, i.e. they do not contain keywords that would allow the model to easily identify which subreddit they came from.
 
 
-## Conclusion
+### Conclusion
 
 Using a TfidfVectorizer + Logistic Regression classifier trained on title and post content allowed us to classify unlabelled posts into the correct subreddit with an 80% accuracy rate. This shows that there is a distinguishable difference in most of the posts from the two subreddits, although it is hard to infer from our top predictor words that they are differentiated by age group.
 
