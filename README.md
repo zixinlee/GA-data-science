@@ -2,7 +2,7 @@
 
 This repository is a portfolio for the projects I worked on as part of General Assembly's 12-week Data Science Immersive programme from July to October 2020.
 
-### [Capstone project: Personalised recommendations to increase AOV of Instacart loyalists](https://github.com/zixinlee/GA-data-science/tree/master/Capstone)
+### [Capstone project: Personalised recommendations to increase AOV of Instacart loyalists](https://github.com/zixinlee/GA-data-science/tree/master/Capstone) (WIP) 
 
 **A recommender systems project**
 

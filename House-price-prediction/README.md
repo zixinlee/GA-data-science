@@ -1,5 +1,9 @@
 # Project 2: Predicting house prices in Ames, Iowa, USA
 
+View notebooks on NBviewer:
+- [Part 1: Data cleaning, EDA, and preprocessing](https://nbviewer.jupyter.org/github/zixinlee/GA-data-science/blob/master/House-price-prediction/1-data-cleaning-and-preprocessing.ipynb)
+- [Part 2: Modelling, feature selection, and prediction](https://nbviewer.jupyter.org/github/zixinlee/GA-data-science/blob/master/House-price-prediction/2-model-selection-and-tuning.ipynb)
+
 ## Introduction
 
 In this project, my goal is to develop a regression model that will make accurate predictions of house prices in the city of Ames in Iowa, USA.
