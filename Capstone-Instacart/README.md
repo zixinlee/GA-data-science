@@ -1,14 +1,14 @@
 # Recommendations for increasing AOV of Instacart loyalists
 
-![](images/instacart-mom-couch.jpg)
+<img src="images/instacart-mom-couch.jpg" class="center" width="600"/>
 
-In the era of online marketplaces, consumers are flooded by far too many choices that are impossible for them to explore fully. Personalized recommendations thus play an important role in helping consumers reduce information overload and discover new and interesting products. On the other end, companies benefit from recommender systems through increased conversions, average order values, and improved customer experience. 
+In the era of online marketplaces, consumers are flooded by far too many choices that are impossible for them to explore fully. Personalized recommendations thus play an important role in helping consumers reduce information overload and discover new and interesting products. On the other end, companies benefit from recommender systems through increased conversions, average order values, and improved customer experience.
 
 ## Problem Statement
 
 In grocery shopping, many customers make multiple purchases of the same or very similar products more frequently than buying entirely new items. They do not tend to search as extensively for new and interesting options as they do with leisure items such as books and TV shows, which means that there are opportunities for Instacart to increase their customers' discovery of new products, and should the product recommendations bring about successful conversions, this will allow Instacart to achieve revenue growth.
 
-As the famous 80/20 principle states, the top 20% of customers contribute 80% of a business' profits. In this project, I will focus on building a recommender system using the purchase histories of Instacart's top customers to create tailored product recommendations for them. 
+As the famous 80/20 principle states, the top 20% of customers contribute 80% of a business' profits. In this project, I will focus on building a recommender system using the purchase histories of Instacart's top customers to create tailored product recommendations for them.
 
 
 ## About Instacart
@@ -40,7 +40,7 @@ First, in Part 1, I compressed the data files and merged the relational tables t
 
 After an exploratory analysis of the dataset in Part 2, I utilised the K-means algorithm to segment the customer base and identify Instacart's top customers in Part 3.
 
-I then returned to the Part 2 notebook to prune the dataset to a more manageable size as there were already interim dataframes in there that would allow easier data filtering. 
+I then returned to the Part 2 notebook to prune the dataset to a more manageable size as there were already interim dataframes in there that would allow easier data filtering.
 
 The dataset was pruned in the following steps:
 1. Removed products that were purchased less than 150 times.
@@ -52,11 +52,11 @@ Next, using the reduced dataset, I created the utility matrices required for the
 Finally, in Part 5, I implemented these following recommender systems:
 
 1. Content-based filtering
-2. Collaborative filtering: User-based 
+2. Collaborative filtering: User-based
 3. Collaborative filtering: Item-based
-4. Collaborative filtering: Matrix factorization model leveraging SVD 
+4. Collaborative filtering: Matrix factorization model leveraging SVD
 
-To evaluate their performance, I randomly sub-sampled 3,000 users and generated recommendations for each of them using each of the 4 recommender systems. 
+To evaluate their performance, I randomly sub-sampled 3,000 users and generated recommendations for each of them using each of the 4 recommender systems.
 
 Evaluation was done using these 3 metrics:
 
@@ -64,13 +64,13 @@ Evaluation was done using these 3 metrics:
 - **Recall**: what proportion of the user's actual purchases were in the recommendations?
 - **F1 score**: harmonic mean of precision and recall. The highest possible value of F1 is 1, indicating perfect precision and recall, and the lowest possible value is 0, if either the precision or the recall is zero.
 
-Note: For the sake of evaluation, I did not filter out previously purchased items from the recommendations. 
+Note: For the sake of evaluation, I did not filter out previously purchased items from the recommendations.
 
-The subsequent sections detail the performance of the systems and my concluding remarks. 
+The subsequent sections detail the performance of the systems and my concluding remarks.
 
 ## Reviewing performance of the recommenders
 
-<img src="images/recsys_eval.png" width="550"/>
+<img src="images/recsys_eval.png" class="center" width="450"/>
 
 Looking at all 3 scores, we can see that only the user-based and item-based collaborative filtering methods outperformed the baseline popularity model. And between the two, the item-based CF model fared slightly better. However, we should note the high score discrepancies between the train and test sets, which suggest that the models are heavily overfitting.
 
@@ -98,7 +98,7 @@ The personalised recommendations generated from my implemented recommender syste
 - **Category pages**: "Most Popular in Category" / "Recommended For You" (category-specific)
 
 
-- **Product detail pages (PDPs)**: "Similar Products" / "Often Bought Together" 
+- **Product detail pages (PDPs)**: "Similar Products" / "Often Bought Together"
 
 
 - **Cart pages**: "Often Bought Together" (showcasing products that are slightly cheaper than those in a user’s cart can lead to quick purchase decisions)
