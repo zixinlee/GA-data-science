@@ -1,6 +1,6 @@
 # Recommendations for increasing AOV of Instacart loyalists
 
-<img src="images/instacart-mom-couch.jpg" class="center" width="600"/>
+<img src="images/instacart-mom-couch.jpg" align="center" width="600"/>
 
 In the era of online marketplaces, consumers are flooded by far too many choices that are impossible for them to explore fully. Personalized recommendations thus play an important role in helping consumers reduce information overload and discover new and interesting products. On the other end, companies benefit from recommender systems through increased conversions, average order values, and improved customer experience.
 
@@ -70,7 +70,7 @@ The subsequent sections detail the performance of the systems and my concluding 
 
 ## Reviewing performance of the recommenders
 
-<img src="images/recsys_eval.png" class="center" width="450"/>
+<img src="images/recsys_eval.png" align="center" width="400"/>
 
 Looking at all 3 scores, we can see that only the user-based and item-based collaborative filtering methods outperformed the baseline popularity model. And between the two, the item-based CF model fared slightly better. However, we should note the high score discrepancies between the train and test sets, which suggest that the models are heavily overfitting.
 
@@ -80,7 +80,7 @@ As for the SVD model, its poor performance could be due to a data sparsity probl
 
 ## Concluding remarks
 
-In this project, I tested out 3 iterations of the collaborative filtering recommender system and 1 iteration of the content-based recommender system. It was interesting to see how different systems generate different sets of recommendations and how well they perform on average, but I would like to emphasise that it is not prudent to make a judgement on the recommender systems' performance based on these metrics alone. The more pragmatic way to test the performance of recommender systems would be to actually track the actual click-through and conversion rates of the recommendations, which is not possible in this instance.
+It was interesting to see how different systems generate different sets of recommendations and how well they perform on average, but I would like to emphasise that it is not prudent to make a judgement on the recommender systems' performance based on these metrics alone. The more pragmatic way to test the performance of recommender systems would be to actually track the actual click-through and conversion rates of the recommendations, which is not possible in this instance.
 
 Furthermore, the way I had generated and re-ranked potential recommendations for each model, e.g. selecting 20 nearest neighbours for user-based collaborative filtering, was highly arbitrary. Selecting different values for the k-nearest neighbours and number of similar items to form my potential recommendation set could greatly alter the performance of the models. Similarly, re-ranking the recommendations (for user-based and item-based CF) in a different way, e.g. by the number of purchases from similar customers, instead of using total sales volume, could change the final recommendation set significantly.
 
