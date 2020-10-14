@@ -1,4 +1,4 @@
-# Recommendations for increasing AOV of Instacart loyalists
+# Personalised recommendations to increase AOV of Instacart loyalists
 
 <img src="images/instacart-mom-couch.jpg" align="center" width="600"/>
 
@@ -33,7 +33,7 @@ View notebooks on NBviewer:
 - [Part 1: Data merging](https://nbviewer.jupyter.org/github/zixinlee/GA-data-science/blob/master/Capstone-Instacart/code/1_data_merging.ipynb)
 - [Part 2: EDA and data pruning](https://nbviewer.jupyter.org/github/zixinlee/GA-data-science/blob/master/Capstone-Instacart/code/2_EDA_data_pruning.ipynb)
 - [Part 3: Customer clustering (RFM analysis) using K-means](https://nbviewer.jupyter.org/github/zixinlee/GA-data-science/blob/master/Capstone-Instacart/code/3_kmeans_clustering_rfm.ipynb)
-- [Part 4: Data preparation for recommender systems](https://github.com/zixinlee/GA-data-science/blob/master/Capstone-Instacart/code/4_data_prep_for_RecSys.ipynb)
+- [Part 4: Data preparation for recommender systems](https://nbviewer.jupyter.org/github/zixinlee/GA-data-science/blob/master/Capstone-Instacart/code/4_data_prep_for_RecSys.ipynb)
 - [Part 5: Implementation of recommender systems](https://nbviewer.jupyter.org/github/zixinlee/GA-data-science/blob/master/Capstone-Instacart/code/5_RecSys.ipynb)
 
 First, in Part 1, I compressed the data files and merged the relational tables together before exporting them to do data exploration with.
