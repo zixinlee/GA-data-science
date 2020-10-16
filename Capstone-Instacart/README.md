@@ -8,6 +8,8 @@ In the era of online marketplaces, consumers are flooded by far too many choices
 
 In grocery shopping, many customers make multiple purchases of the same or very similar products more frequently than buying entirely new items. They do not tend to search as extensively for new and interesting options as they do with leisure items such as books and TV shows, which means that there are opportunities for Instacart to increase their customers' discovery of new products, and should the product recommendations bring about successful conversions, this will allow Instacart to achieve revenue growth.
 
+As more people shift towards online shopping amid coronavirus lockdowns, it has become more paramount than ever for Instacart to improve their users' shopping experience in order to compete with the large-scale grocery retailers that have been ramping up their online channels. This is especially critical in allowing them to retain the continued loyalty of their top customer base.
+
 As the famous 80/20 principle states, the top 20% of customers contribute 80% of a business' profits. In this project, I will focus on building a recommender system using the purchase histories of Instacart's top customers to create tailored product recommendations for them.
 
 
